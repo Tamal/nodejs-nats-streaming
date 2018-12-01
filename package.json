@@ -1,0 +1,22 @@
+{
+  "name": "nats-queue-process",
+  "version": "1.0.0",
+  "description": "NATS microservice",
+  "main": "app.js",
+  "author": "Tamal Mukherjee <tamalm@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "watch": "nodemon ./src/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "node-nats-streaming": "^0.0.41"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

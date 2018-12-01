@@ -1,0 +1,17 @@
+version: '3'
+services:
+  api:
+    build: .
+    image: nats_queue_api:latest
+    container_name: nats_queue
+    networks: 
+     - custom
+    ports:
+     - "3000:3000"
+    env_file:
+     - prod.env
+    external_links:
+     - nats-streaming
+networks:
+      custom:
+        external: true
